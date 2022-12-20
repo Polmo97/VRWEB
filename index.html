@@ -4,6 +4,7 @@
     <script src="js/aframe.js"></script>
   </head>
   <body>
+    <!--
     <h1>PRIMO SITO IN VR</h1>
     <a-scene embedded cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
       <a-asset>
@@ -66,5 +67,10 @@
       </a-entity>
       </a-entity>
     </a-scene>
+  -->
+
+  <model-viewer id="model-viewer" src="../../shared-assets/models/Astronaut.glb" ar ar-modes="scene-viewer webxr" camera-controls touch-action="pan-y" alt="A 3D model of an astronaut" skybox-image="../../shared-assets/environments/aircraft_workshop_01_1k.hdr">
+  <div id="error" class="hide">AR is not supported on this device</div>
+</model-viewer>
   </body>
 </html>
